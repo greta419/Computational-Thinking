@@ -1,0 +1,118 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyOFEWN+YuoPD91DYl/4RH7p",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/greta419/Computational-Thinking/blob/master/%E6%9C%9F%E6%9C%AB%E5%A0%B1%E5%91%8A\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IvjfjejjztM0",
+        "outputId": "9aff41db-0e5b-4040-d837-81b706eea428"
+      },
+      "source": [
+        "# 農場打工打工\r\n",
+        "print(\"歡迎來到農場打工!\")\r\n",
+        "print(\"********************************************\")\r\n",
+        "print(\"你現在在動物區。\")\r\n",
+        "print(\"你可以選擇一種動物餵食:\")\r\n",
+        "print(\"牛(cattle)、豬(pig)、羊(sheep)、雞(hen):\")\r\n",
+        "item = input(\"你選擇那個? \") # Question1:想餵什麼動物?\r\n",
+        "# 開始農場之旅\r\n",
+        "print(\"你看到牛想出柵欄。\") # Question2:牛想散步\r\n",
+        "## 農場體驗中選擇\r\n",
+        "choice1 = input(\"要讓牛出柵欄嗎? 請輸入 讓 或 不讓: \")\r\n",
+        "if choice1 == \"讓\":\r\n",
+        "   print(\"你去借鑰匙打開柵欄。\")\r\n",
+        "   print(\"農場主人阻止你。\")\r\n",
+        "   print(\"再試一次\")\r\n",
+        "else:\r\n",
+        "   print(\"好主意。你聽了農場主人的話聽了農場主人的話。\")\r\n",
+        "   print(\"你沒打開柵欄。\")\r\n",
+        "   print(\"你看牛還是想出去!\")\r\n",
+        "   print(\"你覺得牛可憐\")\r\n",
+        "choice1 = input(\"要讓牛出柵欄嗎? 請輸入 讓 或 不讓: \")\r\n",
+        "if choice1 == \"讓\":\r\n",
+        "   print(\"你去借鑰匙打開柵欄。\")\r\n",
+        "   print(\"農場主人阻止你。\")\r\n",
+        "   print(\"繼續努力\")\r\n",
+        "else:\r\n",
+        "   print(\"好主意。你聽了農場主人的話聽了農場主人的話。\")\r\n",
+        "   print(\"你沒打開柵欄。\")\r\n",
+        "   print(\"你看牛還是想出去!\")\r\n",
+        "   print(\"你覺得牛可憐\")\r\n",
+        "# 這行print(\"你覺得牛可憐\")後,加入以下程式碼:\r\n",
+        "action = input(\"要借鑰匙還是回去? 選擇借鑰匙或回去: \")\r\n",
+        "## 條件選擇與迴圈\r\n",
+        "while action == \"借鑰匙借鑰匙\":\r\n",
+        "  print(\"主人不借。\")\r\n",
+        "  action = input(\"要回去或再借一次鑰匙? 選擇回去或借鑰匙: \")\r\n",
+        "print(\"你跟牛玩了會兒,又跑去找農場主人。\")\r\n",
+        "print(\"農場主人終於借你鑰匙。\")\r\n",
+        "print(\"農場主人請你確認牛隻有沒有回到農舍。\")\r\n",
+        "names = [\"Alex\", \"Bob\", \"John\", \"Mary\", \"Emily\"]\r\n",
+        "for i in names:\r\n",
+        "    print(i)\r\n",
+        "print(\"很高興牛都回到農舍\")\r\n"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "歡迎來到農場打工!\n",
+            "********************************************\n",
+            "你現在在動物區。\n",
+            "你可以選擇一種動物餵食:\n",
+            "牛(cattle)、豬(pig)、羊(sheep)、雞(hen):\n",
+            "你選擇那個? 牛\n",
+            "你看到牛想出柵欄。\n",
+            "要讓牛出柵欄嗎? 請輸入 讓 或 不讓: 讓\n",
+            "你去借鑰匙打開柵欄。\n",
+            "農場主人阻止你。\n",
+            "再試一次\n",
+            "要讓牛出柵欄嗎? 請輸入 讓 或 不讓: 讓\n",
+            "你去借鑰匙打開柵欄。\n",
+            "農場主人阻止你。\n",
+            "繼續努力\n",
+            "要借鑰匙還是回去? 選擇借鑰匙或回去: 借鑰匙\n",
+            "你跟牛玩了會兒,又跑去找農場主人。\n",
+            "農場主人終於借你鑰匙。\n",
+            "農場主人請你確認牛隻有沒有回到農舍。\n",
+            "Alex\n",
+            "Bob\n",
+            "John\n",
+            "Mary\n",
+            "Emily\n",
+            "很高興牛都回到農舍\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
